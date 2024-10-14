@@ -1,0 +1,43 @@
+<div style="background-color: #f5f7e7;">
+    <br>
+<div class="row">
+    <div class="col">
+        <img src="{{data.poster}}" alt="" >
+        
+    </div>
+    <div class="col" style="padding-top: 45px;">
+        <br>
+        <h1 style="font-size: 50px;">{{data.title}}</h1>
+        <h6 style="padding-left: 40px;">⭐ {{data.rating}}</h6>
+        <br>
+        <p style="padding-left: 40px;">U. {{data.hours}}
+            <br>{{data.genre}}
+            <br>{{data.language}}
+        </p>
+        <br>
+        <div style="padding-left: 35px;">
+          <a routerLink="bookTicket" class="btn btn-warning" style="font-weight: 500;height: 45px;width: 150px;">Book Ticket</a>
+        <br>
+        </div>
+    </div>
+</div> <br>
+<div>
+    <br>
+   <p style="padding-left: 40px;"><b> <h4 style=" color:rgb(252, 181, 48);">About the Movie</h4>
+   </b>{{data.plot}}</p>
+    <hr>
+    <p style="padding-left: 40px;"><b> <h4 style=" color:rgb(252, 181, 48);">Cast</h4>
+    </b>{{data.actors}}</p>
+    <hr>
+    <p style="padding-left: 40px;"><b> <h4 style=" color:rgb(252, 181, 48);">Director</h4>
+    </b>{{data.director}}</p>
+    <hr>
+    <div class="form-floating"  style="padding-right:200px; padding-left: 50px;">
+        <br>
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px;"></textarea>
+        <label for="floatingTextarea2" style="padding-left: 90px;padding-top: 40px; font-size: larger;">Comments</label>
+    </div>
+
+</div>
+<br>
+</div>

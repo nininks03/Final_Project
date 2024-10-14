@@ -1,0 +1,12 @@
+.card{
+    width: 250px;
+    border-radius: 20px;
+}
+.rating{
+    background-color: black;
+    color: aliceblue;
+}
+.form-select{
+    font-size: 20px;
+    font-weight: 500;
+}

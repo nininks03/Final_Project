@@ -1,0 +1,55 @@
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" style="height: 300px;">
+      <div class="carousel-item  active">
+        <img src="../../../assets/c1.avif" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../../../assets/c2.avif" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../../../assets/c3.avif" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../../../assets/c4.avif" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br>
+<p class="d-inline-flex gap-1" style="padding-left: 30px;">
+ <a routerLink=""><button type="button" class="btn btn-warning" data-bs-toggle="button">Malayalam </button></a> 
+ <a routerLink=""><button type="button" class="btn btn-warning" data-bs-toggle="button">English</button></a> 
+ <a routerLink=""><button type="button" class="btn btn-warning" data-bs-toggle="button">Hindi</button></a> 
+ <a routerLink=""><button type="button" class="btn btn-warning" data-bs-toggle="button">Tamil</button></a> 
+ <a routerLink=""><button type="button" class="btn btn-warning" data-bs-toggle="button">Telugu</button></a> 
+<br>
+<div style="margin-left: 20px;">
+  <h4 class="head">Recommended Movies</h4>
+</div>
+  <div class="row" style="padding-left: 25px;">
+    @for (item of department; track item.id) 
+    {
+        <div class="col">
+            <div class="card" style="width: 16rem;">
+                <img src="{{item.Image}}" class="card-img-top" alt="..." style="height: 350px;">
+                <div class="rating">⭐ {{item.rating}}</div>
+                <div class="card-body">
+                  <h5 class="card-title">{{item.Title}}</h5>
+                  <p>{{item.genre}}</p>
+                <a routerLink="bookTicket" class="btn btn-warning" style="font-weight: 400;">Book Ticket</a>
+                </div>
+              </div>
+              <br><br>
+        </div>
+    }
+</div>
+<br>
+
+ 
